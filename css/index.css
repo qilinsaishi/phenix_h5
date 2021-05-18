@@ -1,0 +1,325 @@
+        /* 清除内外边距 */
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        blockquote,
+        /* structural elements 结构元素 */
+        dl,
+        dt,
+        dd,
+        ul,
+        ol,
+        li,
+        /* list elements 列表元素 */
+        pre,
+        /* text formatting elements 文本格式元素 */
+        fieldset,
+        lengend,
+        button,
+        input,
+        textarea,
+        /* form elements 表单元素 */
+        th,
+        td {
+            /* table elements 表格元素 */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 重置列表元素 */
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        /* 重置文本格式元素 */
+        a {
+            text-decoration: none;
+            color: #fff;
+            outline: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        * {
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        }
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        .wrapper {
+            width: 7.5rem;
+            /* height: 100%; */
+            background-image: url("../images/bg.png");
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 7.5rem 11.04rem;
+            padding-top: 1.43rem;
+        }
+
+        .titleimg img {
+            width: 6.79rem;
+            height: 1.32rem;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: .47rem;
+        }
+
+        .banner img {
+            width: 6.49rem;
+            height: 8.4rem;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            margin-top: -.6rem;
+            margin-bottom: .18rem;
+        }
+
+        .btn a img {
+            width: 3.48rem;
+            height: 1.05rem;
+        }
+
+        .android {
+            margin-right: .12rem;
+        }
+
+        .weixin {
+            display: flex;
+            justify-content: center;
+            margin-bottom: .2rem;
+        }
+
+        .weixin p {
+            font-size: .26rem;
+            color: #001125;
+            margin-right: .1rem;
+        }
+
+        .weixin p span {
+            color: #4230A6;
+        }
+
+        .weixin a {
+            width: 1.3rem;
+            height: .3rem;
+            background: #4F3CB8;
+            border-radius: .06rem;
+            font-size: .2rem;
+            color: #fff;
+            text-align: center;
+            line-height: .3rem;
+        }
+        .copyright{
+            text-align: center;
+        }
+        .copyright a {
+            font-size: .2rem;
+            text-align: center;
+            color: #001125;
+            height: .2rem;
+            line-height: .2rem;
+        }
+
+        @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+            body {
+                top: constant(safe-area-inset-top);
+                bottom: constant(safe-area-inset-bottom);
+                left: constant(safe-area-inset-left);
+                right: constant(safe-area-inset-right);
+            }
+
+            .wrapper {
+                padding-top: 2.17rem;
+            }
+
+            .banner {
+                margin-bottom: .48rem;
+            }
+
+            .btn {
+                margin-top: 0;
+                margin-bottom: .96rem;
+            }
+        }
+
+        .mip-fill-content .wechat-model-layer {
+            width: 4.5rem;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: .21rem;
+            position: relative;
+            background: #fff;
+            border-radius: .1rem;
+        }
+
+        .mip-fill-content {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .mip-sjh-wechat-model {
+            display: block;
+            position: fixed;
+            z-index: 10001;
+            top: 35%;
+            right: 0px;
+            left: 0px;
+            transition: opacity 0.1s ease-in 0s;
+            display: none;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .image .wechat_success_logo {
+            width: .46rem;
+            height: .46rem;
+        }
+
+        .title {
+            font-size: 0.24rem;
+            color: #333;
+            margin-bottom: .12rem;
+            height: .24rem;
+            line-height: .24rem;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .wechat-number {
+            color: #333;
+            font-size: .24rem;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .desc {
+            color: #333;
+            font-size: .24rem;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .knowButton {
+            background-color: #1aad19;
+            border-radius: .05rem;
+            width: 2.53rem;
+            height: .57rem;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            margin: 0 auto;
+            margin-top: .16rem;
+            cursor: pointer;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .wechat-model-success .knowButton span {
+            color: #fff;
+            font-size: .24rem;
+        }
+
+        .show {
+            cursor: pointer;
+        }
+
+        .mip-sjh-wechat-model .mip-fill-content .wechat-model-layer .close {
+            position: absolute;
+            right: .16rem;
+            top: .16rem;
+            width: .32rem;
+            height: .32rem;
+            cursor: pointer;
+        }
+
+        .head .banner_tel {
+            position: relative;
+            padding-left: 0rem !important;
+            display: block !important;
+            width: 2.8rem;
+            height: .66rem;
+            background: #09BA07;
+            border-radius: .1rem;
+        }
+
+        .head .banner_tel img {
+            position: absolute;
+            width: .6rem;
+            height: .6rem;
+            top: .03rem;
+            left: .2rem;
+        }
+
+        .head .banner_tel span {
+            position: absolute;
+            top: .11rem;
+            left: .95rem;
+            height: .43rem;
+            line-height: .43rem;
+            border-left: .02rem solid white;
+            padding-left: .23rem;
+            font-size: .3rem;
+            font-family: SimHei;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .main .main1_button {
+            position: relative;
+            width: 2rem;
+            height: .7rem;
+            background: #09BA07;
+            border-radius: .1rem;
+        }
+
+        .main .main1_button img {
+            position: absolute;
+            width: .6rem;
+            height: .6rem;
+            top: .03rem;
+            left: .03rem;
+        }
+
+        .main .main1_button span {
+            position: absolute;
+            top: .13rem;
+            left: .64rem;
+            height: .43rem;
+            line-height: .43rem;
+            border-left: .02rem solid white;
+            padding-left: .06rem;
+            font-size: .3rem;
+            font-family: SimHei;
+            font-weight: bold;
+            color: #FFFFFF;
+        }
