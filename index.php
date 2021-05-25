@@ -82,7 +82,7 @@ $return = curl_post(json_encode($params),1);
         function copyText() {
             const input = document.createElement('input')
             document.body.appendChild(input)
-            input.setAttribute('value', "fhdj2021")
+            input.setAttribute('value', "<?php echo $return['defaultConfig']['data']['contact_content']['value'];?>")
             input.select()
             if (document.execCommand('copy')) {
                 document.execCommand('copy')
