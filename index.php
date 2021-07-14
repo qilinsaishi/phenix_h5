@@ -5,6 +5,12 @@ $params = [
     "defaultConfig"=>["keys"=>["ios_url","android_url","contact_type","contact_content","copy_text"],"fields"=>["name","key","value"],"site_id"=>6],
 ];
 $return = curl_post(json_encode($params),1);
+$curHost=$_SERVER['HTTP_HOST'];
+if(strpos($curHost,'fhdjapp.cn')!==false){
+	$baidu_code='cd5d09a9eba4227a31c2147cd2a13540';
+}elseif(strpos($curHost,'kylinesport.com')!==false){
+	$baidu_code='a2c06161561401fbffafb9af1cc534b1';
+}
 ?>
 <head>
     <meta charset="UTF-8">
@@ -19,7 +25,7 @@ $return = curl_post(json_encode($params),1);
         var _hmt = _hmt || [];
         (function() {
           var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?a2c06161561401fbffafb9af1cc534b1";
+          hm.src = "https://hm.baidu.com/hm.js?<?php echo $baidu_code;?>";
           var s = document.getElementsByTagName("script")[0]; 
           s.parentNode.insertBefore(hm, s);
         })();
